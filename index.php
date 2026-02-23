@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,8 +30,19 @@
             </div>
             <div>
                 <ul class="menu-member">
-                    <li><a href="#">SIGN UP</a></li>
-                    <li><a href="#" class="header-login-a">LOGIN</a></li>
+                    <?php
+                    if (isset($_SESSION["userid"])) {
+                    ?>
+                        <li><a href="#"><?php echo $_SESSION["usersuid"]; ?></a></li>
+                        <li><a href="includes/logout.inc.php" class="header-login-a">LOGOUT</a></li>
+                    <?php
+                    } else {
+                    ?>
+                        <li><a href="#">SIGN UP</a></li>
+                        <li><a href="#" class="header-login-a">LOGIN</a></li>
+                    <?php
+                    }
+                    ?>
                 </ul>
             </div>
         </nav>
