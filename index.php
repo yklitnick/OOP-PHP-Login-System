@@ -31,7 +31,7 @@ session_start();
             <div>
                 <ul class="menu-member">
                     <?php
-                    if (isset($_SESSION["userid"])) {
+                    if (isset($_SESSION["usersid"])) {
                     ?>
                         <li><a href="#"><?php echo $_SESSION["usersuid"]; ?></a></li>
                         <li><a href="includes/logout.inc.php" class="header-login-a">LOGOUT</a></li>
