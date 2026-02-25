@@ -36,4 +36,142 @@ header nav {
     justify-content: space-between
 }
 
-header nav div {}
+header nav div {
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+header h3 {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    margin-right: 40px;
+}
+
+.menu-main,
+.menu-member {
+    display: flex;
+    list-style: none;
+}
+
+.menu-main li a,
+.menu-member li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    margin: 0 15px;
+}
+
+.header-login-a {
+    background-color: #3b82f6;
+    padding: 8px 18px;
+    border-radius: 4px;
+}
+
+/* Intro Section */
+.index-intro-bg {
+    background-color: #2a313b;
+    /* Dark overlay color from image */
+    padding: 100px 0;
+}
+
+.index-intro-bg .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index-intro-c1 {
+    width: 45%;
+}
+
+.index-intro-c1 .video {
+    width: 100%;
+    height: 250px;
+    background: url('https://placehold.co/600x400/333/fff?text=Video+Placeholder') center/cover;
+    margin-bottom: 20px;
+}
+
+.index-intro-c2 {
+    width: 45%;
+}
+
+.index-intro-c2 h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.index-intro-c2 a {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+
+/* Forms Section */
+.index-login {
+    padding: 80px 0;
+}
+
+.index-login .wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.index-login-signup,
+.index-login-login {
+    width: 350px;
+}
+
+.index-login-signup h4,
+.index-login-login h4 {
+    border-left: 4px solid #3b82f6;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.index-login-signup p,
+.index-login-login p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Styling for the black box login on the right */
+.index-login-login {
+    background-color: #161616;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.index-login-login h4,
+.index-login-login p {
+    color: #fff;
+    text-align: center;
+    border: none;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
